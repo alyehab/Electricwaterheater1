@@ -82,7 +82,7 @@ ISR(TIMER1_COMPA_vect){
 }
 ISR(TIMER0_COMP_vect){
 	toggle_f=0;
-	u16 x ;
+	u8 x ;
 	if ((Curr_state==SETTING) || (Curr_state==ON)){
 		setting_counter++;
 		x= setting_counter % 4;
